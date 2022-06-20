@@ -1,0 +1,31 @@
+﻿
+
+@model Color
+@{
+    ViewData["Title"] = "ColorDelete";
+}
+
+<div>
+    <div>
+        <h4>
+            Id
+        </h4>
+        <p>
+            @Model.Id
+        </p>
+    </div>
+    <div>
+        <h4>
+            Name
+        </h4>
+        <p>
+            @Model.Name
+        </p>
+    </div>
+</div>
+
+@*asp-action="DeleteSize" asp-route-id="@Model.Id"*@
+
+<form method="post" class="mt-4">
+    <button class="btn btn-danger">Delete</button>
+</form>
